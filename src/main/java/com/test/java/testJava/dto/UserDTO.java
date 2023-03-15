@@ -1,8 +1,8 @@
-<<<<<<< HEAD
 package com.test.java.testJava.dto;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.UUID;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -16,9 +16,7 @@ public class UserDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 
-	private long id;
-
-	private String userId;
+	private UUID userId;
 
 	private String name;
 
@@ -28,21 +26,17 @@ public class UserDTO implements Serializable{
 	
 	private String password;
 	
+	private String token;
+	
+	private Boolean isActive;
+	
 	private List<PhoneDTO> phones;
 	
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
-	public String getUserId() {
+	public UUID getUserId() {
 		return userId;
 	}
 
-	public void setUserId(String userId) {
+	public void setUserId(UUID userId) {
 		this.userId = userId;
 	}
 
@@ -78,96 +72,22 @@ public class UserDTO implements Serializable{
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	public List<PhoneDTO> getPhones() {
-		return phones;
-	}
-
-	public void setPhones(List<PhoneDTO> phones) {
-		this.phones = phones;
-	}
-
-
-}
-=======
-package com.test.java.testJava.dto;
-
-import java.io.Serializable;
-import java.util.List;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-
-import com.test.java.testJava.entity.PhoneEntity;
-
-public class UserDTO implements Serializable{
-
-	private static final long serialVersionUID = 1L;
-
-	private long id;
-
-	private String userId;
-
-	private String name;
-
-	private String lastName;
-
-	private String email;
 	
-	private String password;
-	
-	private List<PhoneDTO> phones;
-	
-	public long getId() {
-		return id;
+	public String getToken() {
+		return token;
 	}
 
-	public void setId(long id) {
-		this.id = id;
-	}
-
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
+	public void setToken(String token) {
+		this.token = token;
 	}
 	
 
-	public String getPassword() {
-		return password;
+	public Boolean getIsActive() {
+		return isActive;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setIsActive(Boolean isActive) {
+		this.isActive = isActive;
 	}
 
 	public List<PhoneDTO> getPhones() {
@@ -180,4 +100,3 @@ public class UserDTO implements Serializable{
 
 
 }
->>>>>>> 467a71f07998eaeeb191ef4130f653c991351994
