@@ -15,16 +15,10 @@
 	<name>testJava</name>
 	<description>Test Java</description>
 	<properties>
-<<<<<<< HEAD
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
 		
-=======
-		<java.version>17</java.version>
-	</properties>
-	<dependencies>
->>>>>>> 467a71f07998eaeeb191ef4130f653c991351994
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -56,12 +50,6 @@
 		    <artifactId>spring-security-crypto</artifactId>
 		    <version>6.0.1</version>
 		</dependency>
-<<<<<<< HEAD
-=======
-		
-		
-		
->>>>>>> 467a71f07998eaeeb191ef4130f653c991351994
 
 		<dependency>
 			<groupId>com.h2database</groupId>
@@ -99,7 +87,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-<<<<<<< HEAD
 			    <!--plugin>    
 			        <artifactId>maven-compiler-plugin</artifactId>
 			        <version>3.10.1</version>
@@ -108,8 +95,6 @@
 			            <target>1.8</target>
 			        </configuration>
     			</plugin-->
-=======
->>>>>>> 467a71f07998eaeeb191ef4130f653c991351994
 		</plugins>
 	</build>
 
